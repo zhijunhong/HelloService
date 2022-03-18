@@ -1,0 +1,10 @@
+server:
+  port: 8081  #服务端口号
+
+
+spring:
+  datasource: #覆盖默认配置文件application.yml中的配置
+    url: jdbc:mysql://127.0.0.1:3306/user?serverTimezone=GMT%2B8
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver

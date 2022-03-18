@@ -7,6 +7,9 @@ eureka:
       defaultZone: http://127.0.0.1:9000/eureka/
 
 spring:
+  profiles:
+    active: dev #激活开发环境配置
+
   application:
     name: service-provider #服务名称--调用的时候根据名称来调用该服务的方法
   datasource:
