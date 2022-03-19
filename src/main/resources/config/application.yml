@@ -33,6 +33,7 @@ management:
         #开放全部节点配置*，开放部分节点使用数组方式
         include: ["health","info","env"]
 
+#验证ConfigurationProperties注解
 person:
   lastName: zhijunhong
   age: 18
