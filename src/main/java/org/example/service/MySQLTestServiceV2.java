@@ -23,4 +23,11 @@ import java.util.List;
          testModel.setName(name);
          return testMapperV2.insert(testModel);
      }
+
+    public int update(int id, String name) {
+        Student student = new Student();
+        student.setId(id);
+        student.setName(name);
+        return testMapperV2.update(student);
+    }
  }

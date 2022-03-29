@@ -10,4 +10,7 @@ public interface TestMapperV2 {
     List<Student> select();
 
     int insert(Student testModel);
+
+    int update(Student student);
+
 }

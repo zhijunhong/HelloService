@@ -29,4 +29,9 @@ public class MySQLTestControllerV2 {
                       @RequestParam(value = "name") String name) throws Exception {
         return mySQLTestServiceV2.insert(id, name);
     }
+
+    @PostMapping(value = "/update")
+    public int update(@RequestParam(value = "id") int id, @RequestParam(value="name") String name)throws Exception {
+        return mySQLTestServiceV2.update(id, name);
+    }
 }

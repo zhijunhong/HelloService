@@ -14,9 +14,9 @@
         from student
     </select>
     <insert id="insert" parameterType="org.example.model.Student">
-        insert into student (id, name
-        )
-        values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}
-        )
+        insert into student (id, name ) values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR} )
     </insert>
+    <update id="update" parameterType="org.example.model.Student">
+        update student set name=#{name} where id=#{id}
+    </update>
 </mapper>
